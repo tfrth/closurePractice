@@ -9,11 +9,11 @@ var outer = function(){
 //Above you're given a function that returns another function which has a closure over the name variable.
 //Invoke outer saving the return value into another variable called 'inner'.
 
-  //Code Here
+var innerFn = outer();
 
 //Once you do that, invoke inner.
 
-  //Code Here
+innerFn();
 
 
 
@@ -21,7 +21,7 @@ var outer = function(){
 
 
 
-var callFriend = function(){
+var callFriend = function(number){
   var friend = 'Jake';
   function callF(number){
     return 'Calling ' + friend + ' at ' + number;
@@ -32,7 +32,7 @@ var callFriend = function(){
 //Above you're given a callFriend function that returns another function.
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
 
-  //Code Here
+var innerFn = callFriend()
 
 
 
